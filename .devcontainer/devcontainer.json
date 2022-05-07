@@ -17,6 +17,12 @@
       "editor.defaultFormatter": "esbenp.prettier-vscode"
     }
   },
-  "extensions": ["esbenp.prettier-vscode", "octref.vetur"],
-  "postStartCommand": "yarn install",
+  "extensions": [
+    "esbenp.prettier-vscode",
+    "octref.vetur",
+    "EditorConfig.EditorConfig",
+    "dbaeumer.vscode-eslint",
+    "VisualStudioExptTeam.vscodeintellicode"
+  ],
+  "postStartCommand": "yarn install"
 }
