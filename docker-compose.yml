@@ -1,13 +1,15 @@
 version: "3"
 services:
   node:
-    image: node:14
+    image: node:16
     working_dir: /workspace
     volumes:
-      - .:/workspace
+      - .:/workspace:cached
       - node-module-volume:/workspace/node_modules
+      - nuxt-volume:/workspace/.nuxt
     ports:
       - 3000:3000
-    command: ["yarn", "dev"]
+    command: "yarn dev"
 volumes:
   node-module-volume:
+  nuxt-volume:
