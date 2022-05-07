@@ -15,7 +15,7 @@ Nuxt.js(Node.js)の開発環境をdevcontainerで構築するテンプレート
 $ yarn dev
 ```
 
-## devcontainerを既存のNuxt.js(Node.js)のプロジェクトで利用する場合
+## devcontainerを既存のNuxt.jsのプロジェクトで利用する場合
 以下のファイルをコピーする
 
 - [docker-compose.yml](docker-compose.yml)
