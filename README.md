@@ -2,34 +2,28 @@
 
 Nuxt.js(Node.js)の開発環境をdevcontainerで構築するテンプレート
 
-## 開発環境構築
-VSCode devcontainer 構築する方法とLocalに入ったNode.jsで構築する方法がある。
 
-### VSCode devcontainerで構築する(推奨)
-リポジトリをクローンしたディレクトリでVS Codeを開くと `Reopen in Container` のポップアップが出るのでそれを選択する。
+## 利用方法
 
-起動後、ターミナルを開き以下のコマンドでNuxt.jsを起動する。
+1. devcontainerを立ち上げる
+リポジトリをクローンしたディレクトリでVS Codeを開いて `Reopen in Container` を実行する。
+
+2. サーバーを立ち上げる
+ターミナルを開き以下のコマンドでNuxt.jsを起動する。
 
 ```
-$ yarn dev
-```
-
-### ローカル環境で構築する
-ローカルにNode.js, yarnをインストールし、以下のコマンドを実行
-
-```bash
-$ yarn install
 $ yarn dev
 ```
 
 ## devcontainerを既存のNuxt.js(Node.js)のプロジェクトで利用する場合
 以下のファイルをコピーする
 
-- docker-compose.yml
-- .devcontainer
+- [docker-compose.yml](docker-compose.yml)
+- [.devcontainer/devcontainer.json](.devcontainer/devcontainer.json)
+- [.devcontainer/docker-compose.yml](.devcontainer/docker-compose.yml)
 
 
 ## 技術スタック
-- Node 14.x
+- Node 16.x
 - Nuxt.js 2.x
 - TypeScript@~4.2
